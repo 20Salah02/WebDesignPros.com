@@ -191,6 +191,7 @@ button:active{
     padding-bottom: 111px;
     color: #ffffff;
     height: 100vh;
+    position: relative;
 }
 .f-descr  h2{
     display: flex;
@@ -299,6 +300,7 @@ button:active{
     display: block;
     width: calc(127% + 1.3px);
     height: 79px;
+    bottom: 0;
 }
 
 .custom-shape-divider-bottom-1717880558 .shape-fill {
@@ -474,11 +476,8 @@ button:active{
         font-size: 28px;
     }
     .custom-shape-divider-bottom-1717880558 {
-        position: absolute;
         bottom: -2px; 
-        width: 100%;
-        height: 79px; 
-    }
+    } 
 
 }
 
@@ -543,15 +542,15 @@ button:active{
         padding-left: 20px;
     }
     .custom-shape-divider-bottom-1717880558 {
-        position: absolute;
         bottom: -2px; 
-        width: 100%;
-        height: 79px; 
-    }
+    } 
 
 }
 @media (max-width: 587px){
-
+    .f-descr {
+        max-height: 100vh;
+        position: relative;
+    }
     .f-descr h2 {
         font-size: 28px;
         padding: 90px 0 10px 0;
@@ -585,12 +584,12 @@ button:active{
         font-size: 20px;
         font-weight: 700;
     }
-    .custom-shape-divider-bottom-1717880558 {
+    /* .custom-shape-divider-bottom-1717880558 {
         position: absolute;
         bottom: -2px; 
         width: 100%;
-        height: 79px; 
-    }
+        height: auto; 
+    } */
 }
 
 @media (max-width: 480px) {
@@ -629,14 +628,14 @@ button:active{
         font-weight: 700;
     }
 
-    .custom-shape-divider-bottom-1717880558 {
+    /* .custom-shape-divider-bottom-1717880558 {
         height: 60px; 
     }
 
     .custom-shape-divider-bottom-1717880558 svg {
         width: 100%;
         height: 60px;
-    }
+    } */
 
 
 } 

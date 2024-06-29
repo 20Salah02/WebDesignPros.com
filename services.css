@@ -307,7 +307,7 @@ button:active{
 /*  */
 /*  */
 .restaurent {
-    padding: 60px 0px ;
+    padding: 60px 10px ;
 }
 .restaurent  h2{
     font-weight: 400;
@@ -386,17 +386,29 @@ button:active{
 
 }
 .restaurent .secend {
-    width: 800px;
-    padding:70px 80px;
-} 
+    display: inline-block;
+    max-width:  1200px;
+    padding:70px 0px;
+}  
+.restaurent .secend img{
+    height: 350px;
+}
+.restaurent .sec{
+    display: flex;
+}
 .restaurent .secend ul li{
     width: 450px;
 }
+
 .restaurent .third {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     width: 700px;
     padding-left: 100px;
+}
+.restaurent .tree{
+    display: flex;
+    flex-direction: row;
 }
 .restaurent .third ul{
     width: 500px;
@@ -410,7 +422,8 @@ button:active{
     height: 60vh;
     width: 100%;
     z-index: 9999;
-}
+} 
+
 /* comerce */
 .comerce {
     padding: 60px 0px ;
@@ -491,17 +504,25 @@ button:active{
     justify-content: space-around;
 }
 .comerce .secend {
+    display: inline-block;
     width: 800px;
     padding:70px 80px;
+}
+.comerce .sec{
+    display: flex;
 }
 .comerce .secend ul li{
     width: 450px;
 }
 .comerce .third {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     width: 700px;
     padding-left: 100px;
+}
+.comerce .tree{
+    display: flex;
+    flex-direction: row;
 }
 .comerce .third ul{
     width: 500px;
@@ -596,17 +617,25 @@ button:active{
     justify-content: space-around;
 }
 .portfolio .secend {
+    display: inline-block;
     width: 800px;
     padding:70px 80px;
+}
+.portfolio .sec{
+    display: flex;
 }
 .portfolio .secend ul li{
     width: 450px;
 }
 .portfolio .third {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     width: 700px;
     padding-left: 100px;
+}
+.portfolio .tree{
+    display: flex;
+    flex-direction: row;
 }
 .portfolio .third ul{
     width: 500px;
@@ -759,6 +788,7 @@ button:active{
         width: auto;
         padding: 10px 50px;
         font-size: 16px;
+        margin-bottom: 10px;
     }
 
     .descr ul li {

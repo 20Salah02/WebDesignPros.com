@@ -447,9 +447,12 @@ button:hover::before {
     width: 100%;
     max-width: 400px;
     height: auto;
-    margin: 70px 50px;
+    margin: 70px auto;
     margin-right:700px ;
+    left: 8%;
+
     box-sizing: border-box;
+    z-index: 9999;
 }
 /*  */
 .port{
@@ -625,7 +628,7 @@ button:hover::before {
 
 @media (max-width: 490px) {
     .f-description {
-        padding: 200px 40px;
+        padding: 150px 40px;
     }
 
     .f-description h2 {

@@ -666,6 +666,10 @@ li:hover i{
     }
 }
 @media (max-width: 530px) {
+    .f-descr{
+        max-height: 100vh;
+
+    }
     nav img{
         margin: 0 30px;
     }
