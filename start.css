@@ -1,0 +1,499 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+/*  */
+header {
+    padding-bottom: 100px;
+}
+nav {
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+    transition: all .55s ease-in;
+    position: fixed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.121);
+    z-index: 9999;
+    flex-direction: row;
+    display: flex;
+}
+nav img {
+    margin-right: 90px ;
+    margin-left: 90px;
+    transition: all .44s ease;
+}
+nav img{
+    max-width: 80px;
+    padding: 0;
+}
+nav img:hover{
+    transform: translateY(-5px);
+}
+
+nav:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+nav ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    height: auto;
+}
+nav ul li{
+   display: inline-block;
+   padding: 30px 30px;
+   margin-left: 20px;
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000000;
+    position: relative;
+    transition: all .33s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    bottom: -32px;
+    right: 0;
+    background: #2b5b50;
+    transition: width 0.4s ease, right 0.4s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+  
+#check {
+    display: none;
+}
+nav ul li .fa-solid{
+    display: none;
+}
+
+
+/*  */
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    justify-content: center;
+
+
+}
+.pricing-plan{
+    background: white;
+    padding: 20px ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    height: 700px;
+    max-height: 100%;
+    text-align: center;
+    margin: 0px 50px ;
+    transition: all .44s ease-in;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05) ;
+    opacity: 1;
+    
+}
+
+.pricing-plan h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.pricing-plan p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+.pricing-plan .price {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+.pricing-plan button {
+    background: #1e2fea;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.pricing-plan button:hover {
+    background-color: #1e2fead4;
+    box-shadow: 0 0 16px 0 rgb(35, 69, 218);
+}
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.pricing-plan ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.pricing-plan ul li:before {
+    content: '✔';
+    color: #2b00ff;
+    margin-right: 10px;
+}
+
+
+/*  */
+
+
+@media (max-width: 1030px) {
+
+    section .pricing-plan{
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 900px) {
+
+
+    section .pricing-plan {
+        max-width: 100%;
+        width: 90%;
+        margin: 20px 20px;
+        height: 650px;
+    }
+
+    section .pricing-plan h2 {
+        font-size: 20px;
+    }
+
+    section .pricing-plan p {
+        font-size: 12px;
+    }
+
+    section .pricing-plan .price {
+        font-size: 28px;
+    }
+
+    section .pricing-plan button {
+        padding: 10px 30px;
+    }
+
+    section .pricing-plan ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+    section .pricing-plan{
+        margin: 0 10px;
+    }
+}
+@media (max-width:777px) {
+    .pricing-plan{
+        padding: 20px 2%;
+    }
+    
+}
+
+
+
+@media (max-width: 650px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section .pricing-plan {
+        max-width: 100%;
+        width: 40%;
+        margin: 50px 20px;
+        margin-bottom: 10px;
+        height: 600px; 
+        max-height: 90%;
+    }
+    section .three{
+        width: 1000px;
+        max-width: 85%;
+        height: 430px;
+        max-height: 100%;
+    }
+    section .three ul {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 100%;
+        height: 200px;
+    }
+    section .three ul li{
+        width: 200px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    section .pricing-plan h2 {
+        font-size: 18px;
+    }
+
+    section .pricing-plan p {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+
+    section .pricing-plan .price {
+        font-size: 24px;
+    }
+
+    section .pricing-plan button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    section .pricing-plan ul li {
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .pricing-plan {
+        max-width: 100%;
+        width: 60%;
+        margin: 20px 0;
+        height: auto;
+    }
+
+    section .pricing-plan ul li{
+        width: 200px;
+        margin: 10px auto;
+        
+    }
+    section .three ul {
+        height: auto;
+    }
+
+    section .pricing-plan h2 {
+        font-size: 16px;
+    }
+
+    section .pricing-plan p {
+        font-size: 12px;
+    }
+
+    section .pricing-plan .price {
+        font-size: 22px;
+    }
+
+    section .pricing-plan button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    section .pricing-plan ul li {
+        font-size: 12px;
+    }
+}
+
+
+
+/* NAV*/
+
+@media (max-width:1170px) {
+    .start{
+        margin-left: 160px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width:1150px){
+    nav img{
+        margin: 0 40px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+}
+@media (max-width:960px){
+    .start{
+        margin-left: 100px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+@media (max-width:900px){
+    .start{
+        margin-left: 50px;
+    }
+}
+@media (max-width:850px){
+    nav{
+        background: white;
+    }
+    nav ul li a {
+        color: #1c2239;
+        font-size: 14px;
+    }
+    nav .start button{
+        color: black;
+    }
+    nav img{
+        margin: 0 50px;
+    }
+    .start{
+        margin-left: 80px;
+    }
+    nav ul li{
+        padding: 30px 20px;
+    }
+}
+@media (max-width: 787px) {
+    .start{
+        margin-left: 50px;
+    }
+    nav img{
+        margin: 0 30px;
+    }
+}
+
+
+@media (max-width:700px) {
+    
+    .checkbtn {
+        display: inline-block;
+        order: 1;
+        margin: auto 63%;
+        color: #1c2239;
+    }
+    nav img{
+        margin: 0 40px;
+    }
+    
+    nav ul {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s;
+    }
+    
+    nav ul li {
+        margin: 5px auto;
+        max-width: 500px;
+        width: 90%;
+    }
+    
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav .start{
+        margin: 0 auto;
+        font-size: 17px;
+        max-width: 500px;
+        width: 80%;
+    }
+     
+
+    #check:checked ~ ul {
+        right: 0;
+    }
+    nav ul li .fa-solid{
+        display: inline-block;
+    }
+    nav ul li{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    nav ul li a::after{
+        bottom: -10px;
+    }
+
+    nav ul i{
+        margin-right: 10px;
+    }
+
+    nav ul li {
+        transition: all .44s ease;
+    }
+
+    nav ul li:active {
+        transform: translateY(-5px);
+    }
+}
+@media (max-width: 530px) {
+    nav img{
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 434px) {
+    nav img{
+        margin: 0 15px;
+        width: 70px;
+    }
+    nav{
+        height: 70px;
+    }
+    nav ul{
+        top: 65px;
+    }
+}
+@media (max-width: 370px) {
+    .checkbtn{
+        margin: auto 60%;
+    }
+    nav ul{
+        top: 60px;
+    }
+}
+
+@media (max-width:371px) {
+    nav ul {
+        height: auto;
+    }
+    
+}
