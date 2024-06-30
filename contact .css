@@ -668,11 +668,14 @@ li:hover i{
 @media (max-width: 530px) {
     .f-descr{
         max-height: 100vh;
-
+        position: relative;
     }
     nav img{
         margin: 0 30px;
     }
+    .custom-shape-divider-bottom-1717880558 {
+        bottom: -2px; 
+    } 
 }
 
 @media (max-width: 434px) {

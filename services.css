@@ -954,8 +954,8 @@ button:active{
         margin-bottom: 50px;
     }
     .restaurent .first,
-    .restaurent .secend,
-    .restaurent .third {
+    .restaurent .secend ,
+    .restaurent .third  {
         flex-direction: column;
         align-items: center;
     }
@@ -964,11 +964,21 @@ button:active{
         width: 100%;
         max-width: 700px;
     }
-    .restaurent .secend {
+    .restaurent .secend  img {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    }
+
+    .restaurent .secend{
+        display: inline-block;
+        width: 100%;
+    }
+    .restaurent .sec{
+        display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        width: 100%;
-        max-width: 90%;
     }
     .restaurent ul {
         max-width: 800px;
@@ -977,7 +987,7 @@ button:active{
     .restaurent ul li{
         font-size: 25px;
     }
-    .restaurent .secend ul li{
+    .restaurent .secend .sec ul li{
         max-width:800px;
         width: 100%;
     }
@@ -998,17 +1008,19 @@ button:active{
         margin-left: 0;
 
     }
-    .restaurent .secend {
+    .restaurent .secend .sec{
         max-width: 100%;
         width: 1200px;
         padding: 0;
-        margin: 0 5%;
+        margin: 0 0%;
     }
-    .restaurent .secend img{
-        margin: 2% 5%;
+    .restaurent .secend .sec img{
+        margin: 2% 4%;
     }
-    .restaurent .secend ul{
-        margin: 0 5%;
+    .restaurent .secend .sec ul{
+        margin: 0 20px;
+        width: 100%;
+        max-width: 1200px;
     }
 }
 
@@ -1028,9 +1040,9 @@ button:active{
     .restaurent img {
         max-width: 85%;
     }
-    .restaurent .secend ul li{
-        width: 90%;
-        max-width: 800px;
+    .restaurent .secend .sec ul li{
+        width: 95%;
+        max-width: 1000px;
     }
     .restaurent .third {
         margin: 0 auto;
@@ -1041,12 +1053,32 @@ button:active{
     .restaurent .secend img{
         margin-right: 100px;
     }
+    .restaurent .secend ul{
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+    }
+    .restaurent .secend{
+        padding: 30px;
+    }
 }
 @media screen and (max-width: 660px ){
     .restaurent .third {
         width: 100%;
         max-width: 800px;
         margin: 3% 5%;
+    }
+    .restaurent .third {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around ;
+        width: 90%;
+        max-width: 800px;
+    }
+    .restaurent .third ul {
+        padding: 0px 0px 0px 30px;
+        margin-left: 0px;
+
     }
 }
 @media screen and (max-width: 500px){
@@ -1059,19 +1091,25 @@ button:active{
     .restaurent ul li {
         font-size: 14px;
     }
-    .restaurent .secend ul li{
-        width: 90%;
+    .restaurent .secend .sec ul li{
+        width: 100%;
         max-width: 800px;
     }
-    .restaurent .secend {
+    .restaurent .secend .sec ul {
+        width: 100%;
+        max-width: 800px;
+    }
+    .restaurent .secend .sec{
         display: flex;
         align-items: center;
         padding-left: 0px;
         margin: 0;
     }
-    .restaurent .secend img {
+    .restaurent .secend .sec img {
         display: block;
         margin: 10px 5%;
+        width: 100%;
+        max-width: 500px;
     }
     .restaurent .third {
         display: flex;
@@ -1231,10 +1269,14 @@ button:active{
         height: auto;
     }
     .comerce .secend {
-        flex-direction: column-reverse;
-        align-items: center;
+        display: inline-block;
         width: 100%;
         max-width: 90%;
+    }
+    .comerce .sec {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .comerce ul {
         max-width: 800px;
@@ -1339,7 +1381,7 @@ button:active{
         display: block;
         margin: 10px 5%;
     }
-    .comerce .third {
+    .comerce .third .tree{
         display: flex;
         flex-direction: column;
         justify-content: space-around ;
@@ -1492,10 +1534,14 @@ button:active{
         height: auto;
     }
     .portfolio .secend {
-        flex-direction: column-reverse;
-        align-items: center;
+        display: inline-block;
         width: 100%;
         max-width: 90%;
+    }
+    .portfolio .sec{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .portfolio ul {
         max-width: 800px;
@@ -1600,12 +1646,12 @@ button:active{
         display: block;
         margin: 10px 5%;
     }
-    .portfolio .third {
+    .portfolio .third .tree{
         display: flex;
         flex-direction: column;
         justify-content: space-around ;
         width: 90%;
-        max-width: 800px;
+        max-width: 900px;
     }
     .portfolio .third ul {
         padding: 0px 0px 0px 30px;
