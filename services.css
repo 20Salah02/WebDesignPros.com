@@ -377,6 +377,7 @@ button:active{
 }}
 .restaurent img{
     width: 650px;
+    height: 350px;
     box-shadow: 0px 0px 16px  #5b5b5b93;
 }
 .restaurent .first , .secend {
@@ -387,12 +388,13 @@ button:active{
 }
 .restaurent .secend {
     display: inline-block;
-    max-width:  1200px;
-    padding:70px 0px;
+    max-width:  800px;
+    padding:70px 80px;
+
 }  
-.restaurent .secend img{
+/* .restaurent .secend img{
     height: 350px;
-}
+} */
 .restaurent .sec{
     display: flex;
 }
@@ -892,6 +894,16 @@ button:active{
     .restaurent .img{
         max-height: 100%;
         height: 30vh;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+        margin: 0;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+        .restaurent .img {
+            background-attachment: scroll;
+        }
     }
 
 }
@@ -963,6 +975,7 @@ button:active{
         margin-bottom: 30px;
         width: 100%;
         max-width: 700px;
+        height: auto;
     }
     .restaurent .secend  img {
         margin-bottom: 30px;
@@ -1196,6 +1209,11 @@ button:active{
     .comerce .img{
         max-height: 100%;
         height: 30vh;
+    }
+    @supports (-webkit-touch-callout: none) {
+        .comerce .img {
+            background-attachment: scroll;
+        }
     }
 }
 

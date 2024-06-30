@@ -450,9 +450,7 @@ button:hover::before {
     margin: 70px auto;
     margin-right:700px ;
     left: 8%;
-
     box-sizing: border-box;
-    z-index: 9999;
 }
 /*  */
 .port{
