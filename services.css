@@ -1880,3 +1880,14 @@ button:active{
     }
     
 }
+.whatss a img {
+    margin: 0;
+    padding: 0;
+    transition: all .44s ease-in ;
+    position: fixed;
+    bottom: 7vh;
+    right: 7vw;
+}
+.whatss a img:hover{
+    transform: translateY(-10px);
+}
